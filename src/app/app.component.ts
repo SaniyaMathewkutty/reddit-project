@@ -9,7 +9,7 @@ export class AppComponent {
   addArticle(title:HTMLInputElement, link:HTMLInputElement):Boolean //HTMLInputElement is the #variableName in .html
   // MethodName(parameter:type, parameter:type):returnType
   {
-    console.log('Adding article title $(title.value) : and adding article link $(link.value) : ');
+    console.log("Adding Article Title :",title.value, "and adding Article Link :", link.value );
     return false;
   }
 
