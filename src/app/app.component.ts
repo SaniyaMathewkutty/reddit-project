@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'reddit-project';
+  addArticle(title:HTMLInputElement, link:HTMLInputElement):Boolean 
+  // MethodName(parameter:type, parameter:type):returnType
+  {
+    console.log('Adding article title $(title.value) : and adding article link $(link.value) : ');
+    return false;
+  }
+
 }
