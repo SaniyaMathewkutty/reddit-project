@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit 
 {
-  // Declare variableNames:type
+  // Declare variableNames:type (properties)
   votes:number;
   title:string;
   link:string;
 
   // Initialise the variables in the constructor
   constructor() {
-    this.title="Angular";
+    this.title="Angular"; // "this" refers to the properties above
     this.link="https://angular.io";
     this.votes=10;
    }
