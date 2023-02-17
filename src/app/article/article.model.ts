@@ -1,4 +1,4 @@
-export class Article { // make this model availale to other components
+export class Article { // make this class available to other components
   
   // Copy of article.component.ts :
 
