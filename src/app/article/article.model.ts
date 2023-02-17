@@ -14,12 +14,12 @@ export class Article { // make this model availale to other components
     this.votes=votes || 10; // tells constructor that either the value OR "10" can be taken in
    }
 
-   voteUp():boolean // this and voteDown() are returning booleans (as false) simply to fix the issue or the page refreshing when these methods are called
+   voteUp()
    {
      this.votes ++;
      return false;
    }
-   voteDown(): boolean
+   voteDown()
    {
      this.votes --;
      return false;

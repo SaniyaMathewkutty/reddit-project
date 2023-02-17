@@ -19,12 +19,12 @@ export class ArticleComponent implements OnInit
 
   ngOnInit() { }
 
-  voteUp():boolean
+  voteUp():boolean // this and voteDown() are returning booleans (as false) simply to fix the issue or the page refreshing when these methods are called
   {
     this.article.voteUp; // referring votes to article.model.ts' method for vote up
     return false;
   }
-  voteDown():boolean
+  voteDown(): boolean
   {
     this.article.voteDown;
     return false;
