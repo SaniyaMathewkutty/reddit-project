@@ -14,20 +14,18 @@ export class ArticleComponent implements OnInit
   // Initialise the property in the constructor
   constructor() {
     // Create a new object of type Article and pass in some values
-    this.article = new Article("Angular", "https://angular.io", 10);
+    this.article = new Article("Angular", "https://angular.io", 10); 
    }
 
   ngOnInit() { }
 
-  voteUp():boolean // this and voteDown() are returning booleans (as false) simply to fix the issue or the page refreshing when these methods are called
+  voteUp()
   {
-    this.article.votes ++; // referring votes to article.model.ts' votes property
-    return false;
+    this.article.voteUp; // referring votes to article.model.ts' method for vote up
   }
-  voteDown(): boolean
+  voteDown()
   {
-    this.article.votes --;
-    return false;
+    this.article.voteDown;
   }
 
 }
