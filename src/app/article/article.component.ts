@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from './article.model'; // import article.model.ts
 
 @Component({
   selector: 'app-article', // need to add this to app.component.html for it to be displayed : <app-article></app-article>
@@ -7,16 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit 
 {
-  // Declare variableNames:type (properties)
-  votes:number;
-  title:string;
-  link:string;
+  // Initialise property article from article.model.ts
+  article:Article;
 
-  // Initialise the variables in the constructor
+  // Initialise the property in the constructor
   constructor() {
-    this.title="Angular"; // "this" refers to the properties above
-    this.link="https://angular.io";
-    this.votes=10;
+    // Create a new object of type Article and pass in some values
+    this.article = new Article("Angular", "https://angular.io", 10);
    }
 
   ngOnInit() { }
