@@ -14,7 +14,7 @@ export class ArticleComponent implements OnInit
   // Initialise the property in the constructor
   constructor() {
     // Create a new object of type Article and pass in some values
-    this.article = new Article("Angular", "https://angular.io", 10); 
+    // this.article = new Article("Angular", "https://angular.io", 10); 
    }
 
   ngOnInit() { }
