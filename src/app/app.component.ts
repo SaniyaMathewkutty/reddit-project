@@ -8,6 +8,7 @@ import { Article } from './article/article.model'; // import model
 })
 export class AppComponent {
 
+  // Declare articles array of type Article
   articles:Article[];
 
   constructor()
@@ -23,6 +24,11 @@ export class AppComponent {
   addArticle(title:HTMLInputElement, link:HTMLInputElement):Boolean //HTMLInputElement is the #variableName in .html
   // MethodName(parameter:type, parameter:type):returnType
   {
+
+    this.articles.push(new Article(title.value, link.value, 0)); // push to article.comp.ts when button is clicked
+
+    // Clear input fields after link's submitted
+    title.value=''; link.value='';
     console.log("Adding Article Title :",title.value, "and adding Article Link :", link.value );
     return false;
   }

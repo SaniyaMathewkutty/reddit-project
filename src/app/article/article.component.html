@@ -9,6 +9,7 @@
             <h5 class="card-title"> <a class="" href="{{ article.link }}"> <!-- Link of article -->
                     {{ article.title }}
                 </a></h5>
+            <p><small> {{ article.domain()}} </small></p>
             <a href (click)="voteUp()">
                 <i class="fas fa-arrow-up"></i> <!-- this references the script in index.html -->
                 upvote

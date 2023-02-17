@@ -12,9 +12,9 @@
       <input name="link" class="form-control" placeholder="Enter URL" #newlink>
     </div>
 
-    <button (click)="addArticle(newtitle, newlink)">Submit Link</button> <!-- passing the # variables above to the method in app.component.ts-->
+    <button (click)="addArticle(newtitle, newlink)" class="btn btn-primary">Submit Link</button> <!-- passing the # variables above to the method in app.component.ts-->
   </fieldset>
 </form>
 
 <!-- add component called "article" (which is under "app directory") to the main html file (this one)-->
-<app-article></app-article>
+<app-article *ngFor="let article of articles">{{article}} </app-article> <!-- ngFor loop  -->

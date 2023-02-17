@@ -17,11 +17,21 @@ export class Article { // make this class available to other components
    voteUp()
    {
      this.votes ++;
-     return false;
    }
    voteDown()
    {
      this.votes --;
-     return false;
+   }
+
+   domain(): string {
+    try {
+        const link: string = this.link.split('//')[1];
+        return link.split('/')[0];
+    }
+    catch (err) 
+    {
+      return null;
+    }
+    }
    }
 }
