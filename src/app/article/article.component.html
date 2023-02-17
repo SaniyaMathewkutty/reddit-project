@@ -1,13 +1,13 @@
 <div class="card mb-3 col-6"> <!-- bootstrap classes -->
     <div class="row">
         <div class="card-header pull-left">
-            <h3> {{ votes }} </h3> <!-- {{ variable }} will display the value of the  variable -->
+            <h3> {{ article.votes }} </h3> <!-- {{ variable }} will display the value of the  variable -->
             <h4>Points</h4>
         </div>
 
         <div class="card-body">
-            <h5 class="card-title"> <a class="" href="{{ link }}"> <!-- ink of article -->
-                    {{ title }}
+            <h5 class="card-title"> <a class="" href="{{ article.link }}"> <!-- Link of article -->
+                    {{ article.title }}
                 </a></h5>
             <a href (click)="voteUp()">
                 <i class="fas fa-arrow-up"></i> <!-- this references the script in index.html -->
