@@ -21,12 +21,12 @@ export class ArticleComponent implements OnInit
 
   voteUp():boolean // this and voteDown() are returning booleans (as false) simply to fix the issue or the page refreshing when these methods are called
   {
-    this.votes ++;
+    this.article.votes ++;
     return false;
   }
   voteDown(): boolean
   {
-    this.votes --;
+    this.article.votes --;
     return false;
   }
 
