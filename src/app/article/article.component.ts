@@ -19,13 +19,15 @@ export class ArticleComponent implements OnInit
 
   ngOnInit() { }
 
-  voteUp()
+  voteUp():boolean
   {
     this.article.voteUp; // referring votes to article.model.ts' method for vote up
+    return false;
   }
-  voteDown()
+  voteDown():boolean
   {
     this.article.voteDown;
+    return false;
   }
 
 }
